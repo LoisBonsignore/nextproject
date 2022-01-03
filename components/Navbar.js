@@ -1,12 +1,15 @@
+import Link from 'next/link'
+
+
 const Navbar = () => {
     return ( 
         <nav>
-            <div>
+            <div className="logo">
                 <h1>Projet Next.js</h1>
             </div>
-            <a>Home</a>
-            <a>About</a>
-            <a>Other</a>
+            <Link href="/"><a>Home</a></Link>
+            <Link href="/about"><a>About</a></Link>
+            <Link href="/other"><a>Other</a></Link>
         </nav>
      );
 }
